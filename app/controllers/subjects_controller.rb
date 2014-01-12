@@ -6,7 +6,7 @@ class SubjectsController < ApplicationController
   private 
 
   def find_all subject
-    Flashcard.where(subject_id: subject.id)
+    Deck.where(subject_id: subject.id)
   end
 
   def find_flash card
