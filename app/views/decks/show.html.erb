@@ -1,5 +1,8 @@
 <h2><%= @deck.title %></h2>
 
 <div id="question">
-  <%= render :partial => 'individual_card', :locals => { card: @card } %>
+  <%= render :partial => 'individual_card', :card => @card %>
+</div>
+<div id="answer">
+
 </div>
