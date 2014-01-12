@@ -3,7 +3,7 @@ FactoryGirl.define do
     title Faker::Lorem.word
   end
 
-  factory :flashcard do
+  factory :deck do
     subject
     title Faker::Lorem.word
   end
