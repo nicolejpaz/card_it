@@ -2,6 +2,6 @@ CardIt::Application.routes.draw do
   root 'subjects#index'
 
   resources :subjects do
-    resources :flashcards
+    resources :decks
   end
 end
