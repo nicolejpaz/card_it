@@ -1,7 +1,14 @@
 <h2>Subjects</h2>
 
 <ul>
-  <% @cards.each do |card| %>
-    <li><span class="flashcard-title"><%= card.title %></span> <%= card.subject.title %></li>
+  <% @subjects.each do |subject| %>
+    <li>
+      <%= subject.title %> 
+      <ul>
+        <% find_all(subject).each do |card| %>
+          <li><%= card.title %></li>
+        <% end %>
+      </ul>
+    </li>
   <% end %>
 </ul>
