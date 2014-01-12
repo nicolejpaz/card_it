@@ -5,8 +5,8 @@
     <li>
       <%= subject.title %> 
       <ul>
-        <% find_all(subject).each do |card| %>
-          <li><%= link_to "#{card.title}", subject_flashcard_path(subject.id, card.id) %></li>
+        <% find_all(subject).each do |deck| %>
+          <li><%= link_to "#{deck.title}", subject_deck_path(subject.id, deck.id) %></li>
         <% end %>
       </ul>
     </li>
