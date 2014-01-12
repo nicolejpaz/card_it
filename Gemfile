@@ -12,5 +12,11 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 1.2'
 
-group :doc do  gem 'sdoc', require: false
+group :doc do
+  gem 'sdoc', require: false
+end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end

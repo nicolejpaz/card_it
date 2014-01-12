@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+subjects = Subject.create [{title: 'Alphabet Representations'}]
+
+Flashcard.create [{title: 'NATO Phonetic Alphabet', subject: subjects.first}]

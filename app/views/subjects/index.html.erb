@@ -1,0 +1,7 @@
+<h2>Subjects</h2>
+
+<ul>
+  <% @cards.each do |card| %>
+    <li><span class="flashcard-title"><%= card.title %></span> <%= card.subject.title %></li>
+  <% end %>
+</ul>
