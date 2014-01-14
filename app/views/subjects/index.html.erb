@@ -5,7 +5,7 @@
     <li>
       <%= subject.title %> 
       <ul>
-        <% find_all(subject).each do |deck| %>
+        <% subject.decks.each do |deck| %>
           <li><%= link_to "#{deck.title}", subject_deck_path(subject.id, deck.id) %></li>
         <% end %>
       </ul>
