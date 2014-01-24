@@ -4,4 +4,6 @@ CardIt::Application.routes.draw do
   resources :subjects do
     resources :decks
   end
+
+  post '/answer', to: 'cards#answer'
 end

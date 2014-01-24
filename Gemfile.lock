@@ -132,6 +132,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-rails
+  coffee-script
   factory_girl_rails (~> 4.0)
   faker
   jbuilder (~> 1.2)

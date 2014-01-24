@@ -7,6 +7,9 @@ gem 'pg'
 
 gem 'sass-rails', '~> 4.0.0'
 
+gem 'coffee-script'
+gem 'coffee-rails'
+
 gem 'jquery-rails'
 
 gem 'turbolinks'
