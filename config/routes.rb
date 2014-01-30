@@ -5,5 +5,5 @@ CardIt::Application.routes.draw do
     resources :decks
   end
 
-  post '/answer', to: 'cards#answer'
+  post '/answer/:deck_id/:card_id', to: 'cards#answer'
 end

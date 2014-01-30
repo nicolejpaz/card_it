@@ -1,9 +1,5 @@
 <h2><%= @deck.title %></h2>
-
 <div id="question">
-  <%= render :partial => 'individual_card', :card => @card %>
+  <%= render :partial => '/cards/questions', :card => @card %>
 </div>
-<div id="answer">
-<%= text_field_tag "answer" %>
-<%= submit_tag "Submit Answer" %>
-</div>
+<%= render :partial => '/cards/answer_form', :card => @card %>
