@@ -1,0 +1,5 @@
+<%= form_tag "/answer/", remote: true, id: "answer_form" do %>
+  <%= text_field_tag "answer" %>
+  <%= hidden_field_tag "card_id", @card.id %>
+  <%= submit_tag "Submit Answer", id: "submit_answer" %>
+<% end %>
